@@ -1,0 +1,34 @@
+
+#wHero {
+  align: left;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.navbar-right a{
+
+    padding-right: 10em;
+    font-size: 3em;
+
+
+}
+
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1em;
+  line-height: 40px;
+  padding-bottom: 19px;
+
+
+}
+
+p {
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+  margin-left: 1.5em;
+}
+}
