@@ -1,4 +1,12 @@
+
 $icon-font-path: '../fonts/';
+
+* {
+  font-family: 'Questrial', sans-serif;
+}
+
+
+
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -17,7 +25,9 @@ body {
   padding-bottom: 20px;
 }
 
-
+#bs-example-navbar-collapse-1 {
+  background-color:#000033;
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .marketing,
@@ -27,43 +37,49 @@ body {
 }
 
 #collapseNav {
-  background-color: #000033;
+  // background-color: #000033;
 }
 
-
-.navbar-right{
-padding-right: 10em;
-  li{
-    margin-left: 3em;
-  }
-  a{
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 1.5em;
-    color: #fff;
-  }
+.colorBack p {
+  margin-left: 20%;
+  margin-top: -1.5em;
 }
 
-.navbar-left {
+.links {
+  list-style: none;
+  margin-left: 20%;
   li {
-    margin-right: 5em;
+    display: inline-block;
+    padding: .25em;
   }
-  a {
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 1.5em;
-    color: #fff;
+  .jot {
+    width: 50px;
+  }
+  .github {
+    width: 45px;
+    margin-right: 2em;
+  }
+  .more {
+    width: 45px;
+    margin-left: 2.5em;
   }
 }
+
+// #wLogo {
+//   position: absolute;
 //
-.bigBack {
-  position: relative;
+//   margin-left: 46%;
+//   margin-top: 2%;
+//   z-index: 6000;
+// }
+
+.colorBack {
+  padding: 2em;
+  background-color:#000033;
 }
 
-#wLogo {
-  position: absolute;
-
-  margin-left: 45%;
-  margin-top: 2%;
-  z-index: 6000;
+.skills {
+  width: 100%;
 }
 
 #wHero {
@@ -73,14 +89,16 @@ padding-right: 10em;
   padding: 0;
   margin: 0;
   position: absolute;
-  z-index: 4000;
+  // z-index: 4000;
 }
 
 .projects {
   position: relative;
   padding-top: 30%;
-  z-index: 6500;
+  // z-index: 6500;
 }
+
+
 
 
   /* Make the masthead heading the same height as the navigation */
@@ -90,7 +108,6 @@ padding-right: 10em;
     margin-left: 1em;
     line-height: 40px;
     padding-bottom: 19px;
-
   }
 
 
