@@ -60,37 +60,54 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div class="page-header">
+    <div class="page-header jotInfo">
   <h1>Jot <small>an intuitive scheduling app for small business</small></h1>
+  <!-- <ul class="links">
+    <li class="github"><a href="https://github.com/Karandashnik/Project-Pencil" target="_blank"><img src="images/GitHub-Mark-64px.png"></img>Github</a></li>
+    <li class="logoWeb"><a href="https://we-jot.herokuapp.com/signin" target="_blank"><img src="images/jotLogo.png"></img>Website</a></li>
+  </ul> -->
+  <div class="row jotDescription">
+  <p>Jot is a full stack Javascript application.  The current build is designed for a private school offering before and after school childcare.  The app will be expanded to offer booking services to diverse small businesses.</p>
+  </div>
   <div class="row">
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <img class="jot" src="images/jot/jotHome.png" alt="...">
+        <img class="jot" src="images/jot/jotHome.png" alt="..."></img>
         <div class="caption">
           <h3>Login</h3>
-          <p>We used Passport for user authentication, giving users the option of creating an account locally or signing in with Facebook.<br><br>
+          <p>Passport is used for authentication, giving users the option of creating an account locally or signing in with Facebook.  Password encription is achieved with Bcrypt.<br><br>
           Much of the design structure is derived from Bootstrap.
         </div>
       </div>
     </div>
       <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <img class="jot" src="images/jot/jot1.png" alt="...">
+        <img class="jot" src="images/jot/jot1.png" alt="..."></img>
         <div class="caption">
           <h3>Dashboard</h3>
-          <p>For the calendar, various options such as the Google Calendar API and the jQuery Clear Calendar were considered but none offered the look and lined up with the goals that we had for our project.  At the forefront of the process was the user story of an individual with minimal computer skills.  We wanted the app to be as easy to use as Facebook.  Our calendar at its earliest stages was based off of Andrew Burgess&rsquo;s tutorial on building a calendar widget however we used pure javascript and backbone in place of a lot of html hard coding.
+          <p>For the calendar, various options such as the Google Calendar API and the jQuery Clear Calendar were considered but with responsive design and a beautiful user experience at the forefront of our priority list, we opted to build the calendar in Javascript. The calendar at its earliest stages was based off of Andrew Burgess&rsquo;s tutorial on building a calendar widget however we used vanilla javascript and backbone in place of a lot of html hard coding and ended up adapting the style to meet our needs.  I especially enjoyed using the javascript Date Object.
           </p>
           <h3>Database and Framework</h3>
-          <p>For the database, our app uses Orchestrate.  Using Backbone for our JavaScript framework, we created collections and models for kids, bookings and calendar days.  I especially enjoyed interacting with the javascript Date Object and as this was my first experience with Backbone, I learned a great deal along the way.
+          <p>For the database, our app uses Orchestrate.  Express is used for our server and learning how to write routes was a highlight of the experience.
+        </div>
+      </div>
+    </div>
+      <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img class="jot" src="images/jot/jotCodeSample.png" alt="..."></img>
+        <div class="caption">
+          <h3>Backbone Library</h3>
+          <p>Using Backbone to bring organization to the project, we created collections, models and views.       As we continue to improve the project we will move more of the visuals into handlebars templates but with just 3 1/2 weeks to conceptionalize, design and build Jot, we had to make tradeoffs in terms of which techonologies to integrate and when to go with what was familiar.
+          </p>
         </div>
       </div>
     </div>
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <img class="jot" src="images/jot/jot2.png" alt="...">
+        <img class="jot" src="images/jot/jot2.png" alt="..."></img>
         <div class="caption">
           <h3>User Experience</h3>
-          <p>We wanted as few windows to click through as possible so we opted to use modals for much of the booking processes in the app.  A user can make, modify and delete bookings which are instantly reflected both on the visual calendar and in the list of bookings.  We faced some inital challenges bringing the functionality we wanted together with our desired look but in the end, were able to get everything working smoothly.  As we continue to improve and expand the app, we hope to put more of our code into handlebars templates.  With just 3.5 weeks to build the app from start to deployment, we had to constantly balance taking time to learn all of the technologies out there with actually producing results.</p>
+          <p>We wanted as few windows to click through as possible so we opted to use modals for much of the booking processes in the app.  A user can make, modify and delete bookings which are instantly reflected both on the visual calendar and in the list of bookings.</p>
         </div>
       </div>
     </div>
