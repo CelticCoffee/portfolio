@@ -24,63 +24,13 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+/***NavBar Stuff ***/
 
 #bs-example-navbar-collapse-1 {
   background-color:#000033;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-#collapseNav {
-  // background-color: #000033;
-}
-
-.colorBack p {
-  margin-left: 20%;
-  margin-top: -1.5em;
-}
-
-.links {
-  list-style: none;
-  margin-left: 20%;
-  li {
-    display: inline-block;
-    padding: .25em;
-  }
-  .jot {
-    width: 50px;
-  }
-  .github {
-    width: 45px;
-    margin-right: 2em;
-  }
-  .more {
-    width: 45px;
-    margin-left: 2.5em;
-  }
-}
-
-// #wLogo {
-//   position: absolute;
-//
-//   margin-left: 46%;
-//   margin-top: 2%;
-//   z-index: 6000;
-// }
-
-.colorBack {
-  padding: 2em;
-  background-color:#000033;
-}
-
-.skills {
-  width: 100%;
-}
+/********Main Image*************/
 
 #wHero {
   align: left;
@@ -92,9 +42,95 @@ body {
   // z-index: 4000;
 }
 
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*********List of Abilities Image*************/
+.skills {
+  padding-top: 0;
+  width: 100%;
+}
+
+/*********The Projects *************/
+.colorBack {
+  margin-left: 0%;
+  margin-top: -1.5em;
+  padding: 2em;
+  background-color:#000033;
+}
+
+.thumbnail {
+  min-width: 239px;
+  max-width: 540px;
+}
+
+/*********Jot *************/
+.caption {
+  padding: 1em;
+  h3 {
+    font-size: 1.35em;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 0;
+  }
+  p {
+    margin-top: -1.5em;
+    text-align: center;
+  }
+
+}
+
+.links {
+  list-style: none;
+  text-align: center;
+  -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+
+
+  li {
+    display: inline-block;
+    margin: 0px auto 0px auto;
+    // padding: .25em;
+  }
+  .jot {
+    width: 35px;
+  }
+  .github {
+    width: 30px;
+    margin-right: 2em;
+  }
+  .more {
+    width: 30px;
+    margin-left: 2.5em;
+  }
+}
+
+.thumbnail {
+  padding-bottom: 25px;
+}
+
+// #wLogo {
+//   position: absolute;
+//
+//   margin-left: 46%;
+//   margin-top: 2%;
+//   z-index: 6000;
+// }
+
+
+
+
 .projects {
-  position: relative;
-  padding-top: 30%;
+  padding-top: 25%;
+  // position: relative;
+  // padding-top: 30%;
   // z-index: 6500;
 }
 
