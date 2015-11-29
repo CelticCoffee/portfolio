@@ -25,9 +25,13 @@ body {
   padding-bottom: 20px;
 }
 /***NavBar Stuff ***/
+.navbar-brand {
+  padding-left: 2em;
+}
 
 #bs-example-navbar-collapse-1 {
   background-color:#000033;
+  padding-left: 2em;
 }
 
 /********Main Image*************/
@@ -72,7 +76,7 @@ body {
 .caption {
   padding: 1em;
   h3 {
-    font-size: 1.35em;
+    font-size: 1.5em;
     font-weight: 400;
     text-align: center;
     margin-left: 0;
@@ -102,6 +106,10 @@ body {
   .jot {
     width: 35px;
   }
+
+  .cathedral {
+    width: 40px;
+  }
   .github {
     width: 30px;
     margin-right: 2em;
@@ -111,6 +119,13 @@ body {
     margin-left: 2.5em;
   }
 }
+
+.pianoMore {
+  width: 30px;
+  margin-left: 1em;
+}
+
+
 
 .thumbnail {
   padding-bottom: 25px;
@@ -150,6 +165,7 @@ body {
 
 /* Custom page footer */
 .footer {
+  text-align: center;
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
