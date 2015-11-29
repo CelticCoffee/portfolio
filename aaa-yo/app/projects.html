@@ -1,0 +1,145 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Wendy Goodwin | Portfolio</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Wendy J Goodwin</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">UI Designer | Developer | Creative <span class="sr-only">(current)</span></a></li>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li id="twitter"><a href=""><img class="twitter" src="images/twitterLogo.png"></img></a></li> -->
+            <li><a href="about.html">About</a></li>
+            <li><a href="http://wendygoodwin.com/">Music</a></li>
+            <li class="dropdown">
+              <a href="/contact" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="tel:(503) 860 7688">Phone (503) 860-7688</a></li>
+                <li><a href="mailto:wendygoodwin@mac.com">email</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="page-header">
+  <h1>Jot <small>an intuitive scheduling app for small business</small></h1>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img class="jot" src="images/jot/jotHome.png" alt="...">
+        <div class="caption">
+          <h3>Login</h3>
+          <p>We used Passport for user authentication, giving users the option of creating an account locally or signing in with Facebook.<br><br>
+          Much of the design structure is derived from Bootstrap.
+        </div>
+      </div>
+    </div>
+      <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img class="jot" src="images/jot/jot1.png" alt="...">
+        <div class="caption">
+          <h3>Dashboard</h3>
+          <p>For the calendar, various options such as the Google Calendar API and the jQuery Clear Calendar were considered but none offered the look and lined up with the goals that we had for our project.  At the forefront of the process was the user story of an individual with minimal computer skills.  We wanted the app to be as easy to use as Facebook.  Our calendar at its earliest stages was based off of Andrew Burgess&rsquo;s tutorial on building a calendar widget however we used pure javascript and backbone in place of a lot of html hard coding.
+          </p>
+          <h3>Database and Framework</h3>
+          <p>For the database, our app uses Orchestrate.  Using Backbone for our JavaScript framework, we created collections and models for kids, bookings and calendar days.  I especially enjoyed interacting with the javascript Date Object and as this was my first experience with Backbone, I learned a great deal along the way.
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img class="jot" src="images/jot/jot2.png" alt="...">
+        <div class="caption">
+          <h3>User Experience</h3>
+          <p>We wanted as few windows to click through as possible so we opted to use modals for much of the booking processes in the app.  A user can make, modify and delete bookings which are instantly reflected both on the visual calendar and in the list of bookings.  We faced some inital challenges bringing the functionality we wanted together with our desired look but in the end, were able to get everything working smoothly.  As we continue to improve and expand the app, we hope to put more of our code into handlebars templates.  With just 3.5 weeks to build the app from start to deployment, we had to constantly balance taking time to learn all of the technologies out there with actually producing results.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+    <div class="footer">
+      <p>Site Designed by Wendy J Goodwin <br>
+      &copy;2015 WJG Design</p>
+    </div>
+  </div>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
