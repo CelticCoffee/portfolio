@@ -7,7 +7,7 @@
     <title> Wendy Goodwin | Portfolio</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" href="images/wjgFavicon.png"/>
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -16,6 +16,8 @@
     <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/projects.css">
+
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -48,6 +50,7 @@
           <ul class="nav navbar-nav navbar-right">
             <!-- <li id="twitter"><a href=""><img class="twitter" src="images/twitterLogo.png"></img></a></li> -->
             <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="http://wendygoodwin.com/">Music</a></li>
             <li class="dropdown">
               <a href="/contact" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
@@ -60,17 +63,34 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div class="page-header jotInfo">
-  <h1>Jot <small>an intuitive scheduling app for small business</small></h1>
-  <!-- <ul class="links">
-    <li class="github"><a href="https://github.com/Karandashnik/Project-Pencil" target="_blank"><img src="images/GitHub-Mark-64px.png"></img>Github</a></li>
-    <li class="logoWeb"><a href="https://we-jot.herokuapp.com/signin" target="_blank"><img src="images/jotLogo.png"></img>Website</a></li>
-  </ul> -->
-  <div class="row jotDescription">
-  <p>Jot is a full stack Javascript application.  The current build is designed for a private school offering before and after school childcare.  The app will be expanded to offer booking services to diverse small businesses.</p>
+    <h1> Projects</h1>
+    <div class="row">
+    <div class="col-sm-5 projectBox">
+      <div class="page-header">
+        <span id="jotClick"><img class="jotHeader" src="images/jotLogo.png"><p class="imageLabel">Click Me</span>
+        <h2>Jot <small>an intuitive scheduling app for small business</small></h2>
+        <div class="row jotDescription">
+        <p>Jot is a full stack Javascript application.  I contributed to every aspect of the stack. The current build is designed for a private school offering before and after school childcare.  The app will be expanded to offer booking services to diverse small businesses.<br>
+        Many business scheduling apps exist but most are geared for large corporations.  Small businesses, particularly sole proprietors have niether the budget nor the time to implement these robust systems.  Jot is different because it does one thing and it does it well: offers an intuitive scheduling interface to allow clients and small businesses to easily make and keep track of appointments.
+      </p>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-sm-6 col-md-4">
+</div>
+<div class="col-sm-5 projectBox">
+    <div class="page-header">
+      <span id="cathedralClick"><img class="cathedralHeader" src="images/cathedralLogo.jpg"><p class="imageLabel">Click Me</image</span>
+      <h2>Cathedral School </h2>
+      <div class="row cathedralDescription">
+      <p>The ongoing reboot of Cathedral School&rsquo;s website is a study in how to present heavy content in a way that is both elegant and easy to navigate.  Busy parents visit the site to quickly gather important information but the site&rsquo;s other purpose is to function as a primary marketing tool for the school.  In addition to the technologies used on the programming side, I have had many meetings with faculty and parents to guide the direction of the site.  The ability to listen and communicate with the client is as much of the process as the actual coding.<br>
+        The site is nearing completion and will debut in early 2016.<p>
+    </p>
+  </div>
+</div>
+</div>
+</div>
+
+  <div class="row leftCol">
+    <div class="col-sm-6 col-md-3">
       <div class="thumbnail">
         <img class="jot" src="images/jot/jotHome.png" alt="..."></img>
         <div class="caption">
@@ -80,29 +100,27 @@
         </div>
       </div>
     </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-3">
       <div class="thumbnail">
         <img class="jot" src="images/jot/jot1.png" alt="..."></img>
         <div class="caption">
           <h3>Dashboard</h3>
           <p>For the calendar, various options such as the Google Calendar API and the jQuery Clear Calendar were considered but with responsive design and a beautiful user experience at the forefront of our priority list, we opted to build the calendar in Javascript. The calendar at its earliest stages was based off of Andrew Burgess&rsquo;s tutorial on building a calendar widget however we used vanilla javascript and backbone in place of a lot of html hard coding and ended up adapting the style to meet our needs.  I especially enjoyed using the javascript Date Object.
           </p>
-          <h3>Database and Framework</h3>
-          <p>For the database, our app uses Orchestrate.  Express is used for our server and learning how to write routes was a highlight of the experience.
         </div>
       </div>
     </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-3">
       <div class="thumbnail">
         <img class="jot" src="images/jot/jotCodeSample.png" alt="..."></img>
-        <div class="caption">
+        <div class="caption padBackbone">
           <h3>Backbone Library</h3>
-          <p>Using Backbone to bring organization to the project, we created collections, models and views.       As we continue to improve the project we will move more of the visuals into handlebars templates but with just 3 1/2 weeks to conceptionalize, design and build Jot, we had to make tradeoffs in terms of which techonologies to integrate and when to go with what was familiar.
+          <p>Using Backbone to bring organization to the project, we created collections, models and views.       The data is stored on the backend in Orchestrate and we use Express for our server.  Learning to write routes was a highlight of this experience.
           </p>
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4">
+    <div class="col-sm-6 col-md-3">
       <div class="thumbnail">
         <img class="jot" src="images/jot/jot2.png" alt="..."></img>
         <div class="caption">
@@ -112,6 +130,47 @@
       </div>
     </div>
   </div>
+  <div class="row" id="cathedralInfo">
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img class="cathedral" src="images/cathedral/facebookCal.png" alt="..."></img>
+        <div class="caption">
+          <h3>Up to Date Information</h3>
+          <p>Part of being a great developer and designer is knowing when to create from scratch and when to enlist third party tools.  For the Cathedral home page, I embedded a google calendar Facebook feed to allow staff to easily keep the site up to date without needing to touch the code. Their current system involves administration modifying the actual website every time they want to highlight any current event.  This saves time and money without taking any draw on the user experience.
+        </div>
+      </div>
+    </div>
+      <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img class="cathedral" src="images/parentsCathedral.png" alt="..."></img>
+        <div class="caption">
+          <h3>Organize Content</h3>
+          <p>The greatest challenge with this website is the vast amount of information that the administration wants to convey.  I've organized this information into logical groupings with elegant design to help users quickly navigate to the information they need wihthout having to search through multiple windows and pages.  Some of the structure I&rsquo;ve achieved using javascript and jQuery to replace information once a menu item is clicked.  Buttons, links and modals are also employed to achieve the organizational goals.
+          </p>
+        </div>
+      </div>
+    </div>
+      <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img class="cathedral" src="images/cathedral/programSamples.png" alt="..."></img>
+        <div class="caption padBackbone">
+          <h3>Feature Imagery</h3>
+          <p>One of Cathedral School's selling points is its warm and welcoming atmosphere.  I've placed responsive images throughout the site that tell that story without words.  In the case of the school program page, I feature the images to give the user an overall impression that there is a lot of exciting activity going on at the school.  jQuery activated buttons then expand out to offer the user detailed descriptions of the program offerings.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img class="jot" src="images/cathedral/responsiveCathedral.png" alt="..."></img>
+        <div class="caption">
+          <h3>Mobile Friendly</h3>
+          <p>The entire site is optomized for mobile phone use.  This is so key when the organization&rsquo;s primary
+          target audience is likely going to be accessing the site more often from mobile than from a desktop.  Bootstrap of course proved highly useful to this end
+        but it also requires a careful consideration of the order of information since busy parents may not take the time to even scroll down a page.  The information needs to be easy to find.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
