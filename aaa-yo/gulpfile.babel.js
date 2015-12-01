@@ -46,6 +46,12 @@ const testLintOptions = {
   }
 };
 
+var deploy = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+  return gulp.scr("./aaa-yo/**/*").pipe(deploy())
+});
+
 gulp.task('lint', lint('app/scripts/**/*.js'));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
