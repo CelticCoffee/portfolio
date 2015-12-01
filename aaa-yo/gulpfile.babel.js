@@ -1,6 +1,5 @@
 // generated on 2015-11-28 using generator-gulp-webapp 1.0.3
 
-var deploy = require('gulp-gh-pages');
 
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
@@ -26,9 +25,11 @@ gulp.task('styles', () => {
     .pipe(reload({stream: true}));
 });
 
+var ghPages = require('gulp-gh-pages');
+
 gulp.task('deploy', function () {
   return gulp.src("./dist/**/*")
-    .pipe(deploy())
+    .pipe(ghPages());
 });
 
 function lint(files, options) {
@@ -46,11 +47,6 @@ const testLintOptions = {
   }
 };
 
-var deploy = require('gulp-gh-pages');
-
-gulp.task('deploy', function () {
-  return gulp.scr("./aaa-yo/**/*").pipe(deploy())
-});
 
 gulp.task('lint', lint('app/scripts/**/*.js'));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
