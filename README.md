@@ -1,2 +1,2 @@
 # portfolio
-Portfolio for Wendy Goodwin
+Developer Portfolio for Wendy Goodwin
