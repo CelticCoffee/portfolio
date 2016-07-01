@@ -31,6 +31,10 @@ body {
   padding-left: 2em;
 }
 
+.thumbnail {
+  height: auto;
+}
+
 .fStrip {
   background-color:#000033;
   padding: 2em;
@@ -58,4 +62,8 @@ p {
   li {
     color: #cc0033;
   }
+}
+
+.footer {
+  font-size: .75em;
 }
