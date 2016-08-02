@@ -1,4 +1,8 @@
+
 "globals": {
   "$": false,
-  "jQuery": false
+  "jQuery": false,
+
 }
+
+/*jshint ignore:   "jQuery-migrate"*/
