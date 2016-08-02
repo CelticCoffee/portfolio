@@ -1,11 +1,11 @@
 // generated on 2015-11-28 using generator-gulp-webapp 1.0.3
-
-
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
+
+var ghPages = require('gulp-gh-pages');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -25,13 +25,6 @@ gulp.task('styles', () => {
     .pipe(reload({stream: true}));
 });
 
-var ghPages = require('gulp-gh-pages');
-
-gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
-    .pipe(ghPages());
-});
-
 function lint(files, options) {
   return () => {
     return gulp.src(files)
@@ -46,7 +39,6 @@ const testLintOptions = {
     mocha: true
   }
 };
-
 
 gulp.task('lint', lint('app/scripts/**/*.js'));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
@@ -168,6 +160,11 @@ gulp.task('wiredep', () => {
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('default', ['clean'], () => {

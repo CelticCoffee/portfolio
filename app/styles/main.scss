@@ -12,6 +12,9 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+// @import 'about';
+// @import 'services';
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -21,21 +24,13 @@ $icon-font-path: '../fonts/';
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 /***NavBar Stuff ***/
 .navbar-brand {
   padding-left: 2em;
 }
-
-// #twitter {
-//   padding-top: -1em;
-// }
-//
-// .twitter {
-//   width: 35px;
-// }
 
 #bs-example-navbar-collapse-1 {
   background-color:#000033;
@@ -52,6 +47,7 @@ body {
   margin-right: 1.25em;
   margin-top: .5em;
   line-height: 1.5em;
+  font-size: 1.25em;
 }
 
 .centered {
@@ -60,7 +56,9 @@ body {
 }
 
 .projectText {
-  padding: 1.25em;
+  padding: 1em;
+  font-size: 1.1em;
+  line-height: 1.5em;
 }
 
 .backToCathedral {
@@ -74,10 +72,9 @@ body {
 }
 
 .moreTextTrigger {
-  padding-top: 1em;
+  padding-top: .1em;
   color: red;
   font-weight: bold;
-
 }
 
 a:hover {
@@ -111,8 +108,7 @@ a:hover {
   height: auto;
   padding: 0;
   margin: 0;
-  // position: absolute;
-  // z-index: 4000;
+  margin-top: -20px;
 }
 
 .centered {
@@ -144,20 +140,20 @@ a:hover {
 }
 
 /*********List of Abilities Image*************/
-.skillBar {
-  margin-right: 0;
-  margin-left: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.skills {
-  margin-right: 0;
-  padding-top: 0;
-  padding-left: 0;
-  margin-left: 0;
-  width: 100%;
-}
+// .skillBar {
+//   margin-right: 0;
+//   margin-left: 0;
+//   padding-left: 0;
+//   padding-right: 0;
+// }
+//
+// .skills {
+//   margin-right: 0;
+//   padding-top: 0;
+//   padding-left: 0;
+//   margin-left: 0;
+//   width: 100%;
+// }
 
 /*********The Projects *************/
 .colorBack {
@@ -169,11 +165,14 @@ a:hover {
 .thumbnail {
   min-width: 239px;
   max-width: 540px;
+  height: 770px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
-.thumbnail {
-  height: 740px;
-}
+
 
 /*********Jot *************/
 .caption {
@@ -185,14 +184,12 @@ a:hover {
     margin-left: 0;
   }
   p {
-    // margin-top: -1.5em;
     text-align: center;
   }
-
-  h4 {
+  .subtitle {
     text-align: center;
+    font-size: 1.2em;
   }
-
 }
 
 .links {
@@ -288,15 +285,42 @@ a:hover {
   margin: 0;
 }
 
-/* Supporting marketing content */
-.marketing {
-  position: relative;
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
+
+.actionButton {
+  margin-bottom: 1em;
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
+}
+
+.grayBox {
+  background-color: lightGray;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  font-size: 1.25em;
+
+  h4 {
+    font-size: 1.25em;
+  }
+
+}
+
+.icons {
+  padding-top: .65em;
+}
+
+.thumbnail {
+
+}
+
+// .icons {
+//   // padding: 0em, .10em, 0em, .10em;
+// }
 
 
 
@@ -314,13 +338,7 @@ a:hover {
     padding-right: 0;
   }
 
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
 
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+
+
 }
