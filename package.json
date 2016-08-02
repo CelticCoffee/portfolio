@@ -7,7 +7,7 @@
     "babel-core": "^5.5.6",
     "browser-sync": "^2.2.1",
     "del": "^1.1.1",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-cache": "^0.2.8",
     "gulp-eslint": "^0.13.2",
@@ -38,5 +38,36 @@
         "single"
       ]
     }
-  }
+  },
+  "name": "portfolio",
+  "description": "Developer Portfolio for Wendy Goodwin",
+  "version": "1.0.0",
+  "main": "gulpfile.babel.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "babel-core": "^5.8.38",
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "main-bower-files": "^2.13.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CelticCoffee/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CelticCoffee/portfolio/issues"
+  },
+  "homepage": "https://github.com/CelticCoffee/portfolio#readme"
 }
