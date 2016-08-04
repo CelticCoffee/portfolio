@@ -39,7 +39,5 @@
       ]
     }
   },
-  "dependencies": {
-    "babel-register": "^6.11.6"
-  }
+  "dependencies": {}
 }
