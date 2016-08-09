@@ -16,6 +16,7 @@ $(document).ready(function() {
 
     $('.moreTextTrigger').click(function(){
       $('.moreText').toggle('slow');
+      $('.elvonQuote').toggle('slow');
     });
 
     $('.cathedralTextShow').click(function(){
