@@ -5,15 +5,9 @@ $icon-font-path: '../fonts/';
   font-family: 'Questrial', sans-serif;
 }
 
-
-
-
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-
-// @import 'about';
-// @import 'services';
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -52,7 +46,6 @@ body {
 
 .centered {
   text-align: center;
-
 }
 
 .projectText {
@@ -83,7 +76,6 @@ a:hover {
 }
 
 .testSlider{
-
   .cathedralSlide2 {
     margin-top: .5em;
     // background-color: #EBECE4;
@@ -100,7 +92,6 @@ a:hover {
 
 .elvonQuote {
   margin-top: .2em;
-  // background-color: #EBECE4;
   background-color: orange;
   padding: .8em;
   font-family:  'La Belle Aurore', serif;
@@ -142,7 +133,7 @@ a:hover {
 
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.marketing,
+
 .footer {
   padding-left: 15px;
   padding-right: 15px;
@@ -156,8 +147,8 @@ a:hover {
 }
 
 .thumbnail {
-  // min-width: 239px;
-  // max-width: 540px;
+  min-width: 239px;
+  max-width: 540px;
   height: 790px;
 
   a {
@@ -317,7 +308,7 @@ a {
     padding: .4em;
     font-size: 1em;
   }
-  // 
+  //
   // .thumbnail {
   //   height: 760px;
   //
