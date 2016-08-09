@@ -149,7 +149,7 @@ a:hover {
 .thumbnail {
   min-width: 239px;
   max-width: 540px;
-  height: 790px;
+  height: 760px;
 
   a {
     text-decoration: none;
@@ -294,7 +294,6 @@ a {
 
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
   .footer {
     padding-left: 0;
     padding-right: 0;
