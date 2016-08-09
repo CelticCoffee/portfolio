@@ -156,8 +156,8 @@ a:hover {
 }
 
 .thumbnail {
-  min-width: 239px;
-  max-width: 540px;
+  // min-width: 239px;
+  // max-width: 540px;
   height: 790px;
 
   a {
@@ -229,23 +229,8 @@ a:hover {
   padding-bottom: 25px;
 }
 
-// #wLogo {
-//   position: absolute;
-//
-//   margin-left: 46%;
-//   margin-top: 2%;
-//   z-index: 6000;
-// }
 
 
-
-
-.projects {
-  // padding-top: 25%;
-  // position: relative;
-  // padding-top: 30%;
-  // z-index: 6500;
-}
 
 
 
@@ -256,7 +241,7 @@ a:hover {
     margin-bottom: 0;
     margin-left: 1em;
     line-height: 40px;
-    padding-bottom: 19px;
+    padding-bottom: 0;
   }
 
 
@@ -307,13 +292,6 @@ a {
   padding-top: .65em;
 }
 
-.thumbnail {
-
-}
-
-// .icons {
-//   // padding: 0em, .10em, 0em, .10em;
-// }
 
 
 
