@@ -331,7 +331,17 @@ a {
     padding-right: 0;
   }
 
+}
 
 
+@media screen and (max-width: 1276px) {
+  .projectText {
+    padding: .4em;
+    font-size: 1em;
+  }
 
+  .thumbnail {
+    height: 760px;
+
+  }
 }
