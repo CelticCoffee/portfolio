@@ -26,10 +26,29 @@ body {
   padding-left: 2em;
 }
 
-#bs-example-navbar-collapse-1 {
+#hamburger {
   background-color:#000033;
   padding-left: 2em;
 }
+
+
+
+.word-circle {
+  padding: 10px 15px 10px 15px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 1.25em;
+  font-family:  'La Belle Aurore', serif;
+
+}
+
+.chosen {
+  background-color: #ac2925;
+  padding-top: .75em;
+  padding-bottom: .75em;
+}
+
+
 
 .wjgWhy {
   text-align: center;
@@ -70,10 +89,10 @@ body {
   font-weight: bold;
 }
 
-a:hover {
-  font-size: 1.25em;
-  text-decoration: none;
-}
+// a:hover {
+//   font-size: 1.25em;
+//   text-decoration: none;
+// }
 
 .testSlider{
   .cathedralSlide2 {
@@ -125,12 +144,46 @@ a:hover {
   }
 }
 
-.portfolioTitle {
+.section-title {
   color: white;
+
+  .glyphicon-heart {
+    color: #ac2925;
+  }
+  .glyphicon-heart:hover {
+    color: white;
+  }
 
 }
 
+.intro-content {
+  color: white;
+  font-size: 1.35em;
 
+  li {
+    list-style: none;
+    font-size: 1.5em;
+  }
+}
+
+.content-accent-font {
+  color: white;
+  font-size: 1.75em;
+
+  a {
+    color: white;
+    font-family:  'La Belle Aurore', serif;
+  }
+  a:hover {
+    color: #ac2925;
+  }
+}
+
+.grayBack {
+  margin-left: 0%;
+  padding: 2em;
+  background-color:gray;
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
@@ -270,8 +323,8 @@ a {
   background-color: lightGray;
   padding-left: 1em;
   padding-right: 1em;
-  padding-bottom: .5em;
-  padding-top: .5em;
+  padding-bottom: .25em;
+  padding-top: .25em;
   font-size: 1.25em;
 
   h4 {
@@ -284,6 +337,9 @@ a {
   padding-top: .65em;
 }
 
+.icons:hover {
+  font-size: 1.55em;
+}
 
 
 
@@ -300,6 +356,34 @@ a {
     padding-right: 0;
   }
 
+}
+
+@media (max-width: 900px) {
+
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 
