@@ -2,6 +2,19 @@
 'use strict';
 
 $(document).ready(function() {
+
+  var page = document.URL;
+  console.log(page);
+    if(page === "http://localhost:9000/services.html"){
+      var contactform = document.getElementById("contactForm");
+      contactform.setAttribute('action', '//formspree.io/' +
+      'wendygoodwin' + '@' + 'mac' + '.' + 'com');
+    }
+    else {
+      console.log("no contact form")
+    }
+
+
   $('#jotClick').click(function() {
     $('.leftCol').toggle();
     $('.jotDescription').toggle();
@@ -37,4 +50,12 @@ $(document).ready(function() {
       window.scrollTo(0, 14);
       console.log('snowman');
     });
-});
+
+
+      //   contactform.setAttribute('action', '//formspree.io/' +
+      //   'wendygoodwin' + '@' + 'mac' + '.' + 'com');
+      //
+      //
+      //   console.log("no contact form");
+      // }
+  });
