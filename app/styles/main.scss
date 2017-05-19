@@ -154,7 +154,7 @@ a:hover {
 
 
 .thumbnail {
-  height: 720px;
+  height: 740px;
   max-width: 540px;
   min-width: 239px;
 }
@@ -389,7 +389,11 @@ a {
 
 
 
-
+@media (max-width: 995px) {
+  .smaller-thumbnail {
+    height: 740px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   //makes nav links not so close to edge
@@ -402,13 +406,13 @@ a {
     margin-top: -5px;
   }
 
+  .smaller-thumbnail {
+    height: 590px;
+  }
+
 }
 
-@media (max-width: 995px) {
-  .smaller-thumbnail {
-    height: 720px;
-  }
-}
+
 
 
 
