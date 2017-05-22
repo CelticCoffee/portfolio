@@ -36,6 +36,10 @@ a:hover {
 /*////////////////////////////////////*/
 /*//////////***Navigation*** /////////*/
 /*////////////////////////////////////*/
+.navbar-default {
+  background-color: #000333;
+  border-color: #000333;
+}
 
 .navbar-inverse {
   background-color: #000333;
@@ -71,17 +75,29 @@ a:hover {
     .icons:hover {
       width: 115%;
     }
+
+    .active {
+      text-decoration: underline;
+      color: #ac2925;
+    }
   }
 }
 
 /*////////////////////////////////////*/
 /*//////////***ROW and PAGE STYLES*** /////////*/
 /*////////////////////////////////////*/
+
+
 #wHero {
   height: auto;
   margin-top: -22px;
   padding: 0;
-  width: 100%;
+}
+
+#wDeveloper {
+  display: block;
+  margin: 20px auto;
+  width: 375px;
 }
 
 .blueRow {
@@ -92,7 +108,35 @@ a:hover {
 .grayBack {
   background-color:gray;
   padding: 0em 1.5em 1.5em 1.5em;
+}
 
+.linenBack {
+  background-color: linen;
+  padding: 0em 1.5em 1.5em 1.5em;
+
+  .intro-content {
+    color: black;
+  }
+
+  .main-title {
+    color: black;
+  }
+
+  .section-subtitle {
+    color: black;
+  }
+
+  .feature-list li {
+    color: black;
+  }
+}
+
+.resource-row {
+  background-color: gray;
+}
+
+.sub-page-top {
+  margin-top: -22px;
 }
 
 .centered {
@@ -102,6 +146,7 @@ a:hover {
 .main-title {
   color: white;
   font-size: 2.75em;
+  padding-top: .15em;
   text-transform: uppercase;
 
 }
@@ -152,15 +197,14 @@ a:hover {
 /*//////////***Portfolio*** /////////*/
 /*////////////////////////////////////*/
 
-
 .thumbnail {
-  height: 740px;
+  height: 770px;
   max-width: 540px;
   min-width: 239px;
 }
 
 .smaller-thumbnail {
-  height: 590px;
+  height: 635px;
 
 }
 
@@ -168,8 +212,6 @@ a:hover {
   // list-style: none;
   font-size: 1.15em;
   line-height: 1.75em;
-
-
 }
 
 .accent-font {
@@ -182,16 +224,6 @@ a:hover {
 
 
 
-
-// .tech-button {
-//   font-size: 1.5em;
-//   text-align: center;
-//   padding-bottom: .5em;
-//   padding-left: 1em;
-//   padding-right: 1em;
-//   margin-bottom: 1em;
-//   margin-top: 1em;
-
 .tech-button {
   font-size: 1.25em;
   text-align: center;
@@ -199,6 +231,7 @@ a:hover {
   height: 60px;
   border-radius: 100px;
   margin-bottom: 1em;
+  margin-top: 1em;
 
 .glyphicon-apple {
   font-size: 2em;
@@ -262,6 +295,7 @@ a:hover {
 .section-subtitle {
   color: white;
   font-size: 1.8em;
+  text-align: center;
 }
 
 .glyphicon-ok {
@@ -276,7 +310,7 @@ a:hover {
 .feature-list li{
   color: white;
   list-style: none;
-  font-size: 1.15em;
+  font-size: 1.25em;
   line-height: 2em;
   margin-bottom: 1em;
 
@@ -301,9 +335,9 @@ a:hover {
 }
 
 .subheader-accent-font {
-  font-family:  'La Belle Aurore', serif;
+  font-family:  'Dancing Script', serif;
   color: #ac2925;
-  font-size: 2em;
+  font-size: 3em;
 
 }
 
@@ -370,11 +404,6 @@ a:hover {
 
 
 
-// .container-fluid {
-//   padding: 0;
-//   margin: 0;
-// }
-
 
 .actionButton {
   margin-bottom: 1em;
@@ -385,17 +414,32 @@ a {
 }
 
 }
+@media screen and (min-width: 1575px){
+  .smaller-thumbnail {
+    height: 700px;
+  }
+}
 
 
+@media screen and (max-width: 1222px){
+  .smaller-thumbnail {
+    height: 650px;
+  }
+}
 
 
-@media (max-width: 995px) {
+@media screen and (max-width: 995px) {
   .smaller-thumbnail {
     height: 740px;
+  }
+
+  .extra-thumbnail {
+    height: 770px;
   }
 }
 
 @media screen and (max-width: 768px) {
+
   //makes nav links not so close to edge
   .navbar-right li{
     margin-left: 2em;
@@ -410,7 +454,19 @@ a {
     height: 590px;
   }
 
+  .extra-thumbnail {
+    height: 670px;
+  }
+
+  .thumbnail {
+    display: block;
+    margin: 0 auto;
+  }
+
 }
+
+
+
 
 
 

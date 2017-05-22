@@ -1,61 +1,47 @@
 /*global $ */
 'use strict';
 
+
+
+
 $(document).ready(function() {
 
-  var page = document.URL;
-  console.log(page);
-    if(page === "http://localhost:9000/services.html"){
-      var contactform = document.getElementById("contactForm");
-      contactform.setAttribute('action', '//formspree.io/' +
+  function Home(){
+    this.page = document.URL;
+    this.contactForm = document.getElementById("contactForm");
+    this.topBtn = document.querySelector(".topBtn");
+  }
+
+
+  Home.prototype.init = function() {
+    this.bindEvents();
+    this.activeContact();
+    this.goToTop();
+  };
+
+
+  Home.prototype.bindEvents = function(){
+    this.topBtn.addEventListener("click", this.goToTop.bind(this), false);
+  };
+
+  Home.prototype.activeContact = function(){
+    if(this.page === "http://localhost:9000/services.html"){
+      this.contactForm.setAttribute('action', '//formspree.io/' +
       'wendygoodwin' + '@' + 'mac' + '.' + 'com');
     }
     else {
       console.log("no contact form")
     }
+  };
+
+  Home.prototype.goToTop = function(){
+    window.scrollTo(0, 14);
+  }
 
 
-  $('#jotClick').click(function() {
-    $('.leftCol').toggle();
-    $('.jotDescription').toggle();
-    $('#cathedralInfo').hide();
-    $('.cathedralDescription').hide();
-  });
-    $('#cathedralClick').click(function() {
-      $('#cathedralInfo').toggle();
-      $('.cathedralDescription').toggle();
-      $('.leftCol').hide();
-    });
 
-    $('.moreTextTrigger').click(function(){
-      $('.moreText').toggle('slow');
-      $('.elvonQuote').toggle('slow');
-    });
-
-    $('.cathedralTextShow').click(function(){
-      $('.moreCathedral').toggle('slow');
-      $('.cathedralSlide2').toggle('slow');
-      $('.cathedralTextShow').toggle('slow');
-      $('.backToCathedral').toggle('slow');
-    });
-
-    $('.backToCathedral').click(function(){
-      $('.moreCathedral').toggle('slow');
-      $('.cathedralSlide2').toggle('slow');
-      $('.cathedralTextShow').toggle('slow');
-      $('.backToCathedral').toggle('slow');
-    });
-
-    $('.topBtn').click(function(){
-      window.scrollTo(0, 14);
-      console.log('snowman');
-    });
+var indexPage = new Home();
+indexPage.init();
 
 
-      //   contactform.setAttribute('action', '//formspree.io/' +
-      //   'wendygoodwin' + '@' + 'mac' + '.' + 'com');
-      //
-      //
-      //   console.log("no contact form");
-      // }
   });
