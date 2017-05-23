@@ -5,8 +5,8 @@ $(document).ready(function() {
 
   function Home(){
     this.page = document.URL;
-    this.contactForm = document.getElementById("contactForm");
-    this.topBtn = document.querySelector(".topBtn");
+    this.contactForm = document.getElementById('contactForm');
+    this.topBtn = document.querySelector('.topBtn');
   }
 
 
@@ -18,23 +18,22 @@ $(document).ready(function() {
 
 
   Home.prototype.bindEvents = function(){
-    this.topBtn.addEventListener("click", this.goToTop.bind(this), false);
+    this.topBtn.addEventListener('click', this.goToTop.bind(this), false);
   };
 
   Home.prototype.activeContact = function(){
-    if(this.page === "http://www.wendygoodwin.io/services.html"){
+    if(this.page === 'http://www.wendygoodwin.io/services.html'){
       this.contactForm.setAttribute('action', '//formspree.io/' +
       'wendygoodwin' + '@' + 'mac' + '.' + 'com');
     }
     else {
-      console.log("no contact form")
+      console.log('no contact form');
     }
   };
 
   Home.prototype.goToTop = function(){
     window.scrollTo(0, 14);
-  }
-
+  };
 
 
 var indexPage = new Home();
