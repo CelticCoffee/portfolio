@@ -1,9 +1,6 @@
 /*global $ */
 'use strict';
 
-
-
-
 $(document).ready(function() {
 
   function Home(){
@@ -25,7 +22,7 @@ $(document).ready(function() {
   };
 
   Home.prototype.activeContact = function(){
-    if(this.page === "http://localhost:9000/services.html"){
+    if(this.page === "http://www.wendygoodwin.io/services.html"){
       this.contactForm.setAttribute('action', '//formspree.io/' +
       'wendygoodwin' + '@' + 'mac' + '.' + 'com');
     }
