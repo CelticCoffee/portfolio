@@ -22,7 +22,7 @@ $(document).ready(function() {
   };
 
   Home.prototype.activeContact = function(){
-    if(this.page === 'http://www.wendygoodwin.io/services.html'){
+    if(this.page === 'http://www.wendygoodwin.io/services.html' || 'http://www.wendygoodwin.io/services.html#contactForm' ){
       this.contactForm.setAttribute('action', '//formspree.io/' +
       'wendygoodwin' + '@' + 'mac' + '.' + 'com');
     }
