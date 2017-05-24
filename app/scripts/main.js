@@ -22,8 +22,8 @@ $(document).ready(function() {
   };
 
   Home.prototype.activeContact = function(){
-    var directContact = 'http://www.wendygoodwin.io/services.html';
-    var secondaryContact = 'http://www.wendygoodwin.io/services.html#contactForm';
+    var directContact = 'https://www.wendygoodwin.io/services.html';
+    var secondaryContact = 'https://www.wendygoodwin.io/services.html#contactForm';
     if((this.page === directContact) || (this.page === secondaryContact )){
       this.contactForm.setAttribute('action', '//formspree.io/' +
       'wendygoodwin' + '@' + 'mac' + '.' + 'com');
