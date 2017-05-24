@@ -17,10 +17,7 @@ $icon-font-path: '../fonts/';
 }
 
 /* Space out content a bit */
-body {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
+
 
 
 
@@ -368,7 +365,7 @@ a:hover {
 
 
 
-/*********The Projects *************/
+
 
 
 .contact-form-box {
@@ -399,14 +396,29 @@ a {
   color: white;
   text-decoration: none;
 }
-
 }
+
+
+/*////////////////////////////////////*/
+/*//////////***Media Queries*** /////////*/
+/*////////////////////////////////////*/
+
+
+
+
 @media screen and (min-width: 1575px){
   .smaller-thumbnail {
     height: 700px;
   }
 }
 
+@media screen and (max-width: 1276px) {
+  .projectText {
+    padding: .4em;
+    font-size: 1em;
+  }
+
+}
 
 @media screen and (max-width: 1222px){
   .smaller-thumbnail {
@@ -432,6 +444,8 @@ a {
     margin-left: 2em;
   }
 
+
+
   //keeps hamburger icon from being cut-off
   #wHero {
     margin-top: -5px;
@@ -442,7 +456,7 @@ a {
   }
 
   .extra-thumbnail {
-    height: 670px;
+    height: 770px;
   }
 
   .thumbnail {
@@ -450,15 +464,18 @@ a {
     margin: 10px auto;
   }
 
-}
+  .accent-font {
+    font-size: 16px;
+    line-height: 22px;
+  }
 
-@media screen and (max-width: 1276px) {
-  .projectText {
-    padding: .4em;
-    font-size: 1em;
+  .tech-button {
+    display: block;
+    margin: 10px auto;
   }
 
 }
+
 
 @media screen and (max-width:499px){
   .contact-form-box {
@@ -469,4 +486,45 @@ a {
     padding: 20px;
     border-radius: 5px;
     }
+
+    .extra-thumbnail {
+      height: 770px;
+    }
+}
+
+@media screen and (max-width:445px){
+   .accent-font {
+     font-size: 14px;
+     line-height: 18px;
+   }
+
+   #contactForm {
+     width: 300px;
+     display: block;
+     margin: 0 auto;
+   }
+
+   .contact-form-box {
+     display: block;
+     margin: 20px auto;
+     width: 325px;
+     background-color: gray;
+     padding: 10px;
+     border-radius: 5px;
+     }
+
+
+     .intro-content {
+       text-align: center;
+     }
+
+     .section-subtitle {
+       font-size: 1.5em;
+     }
+
+     .feature-list {
+       font-size: 1em;
+     }
+
+
 }
